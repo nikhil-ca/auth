@@ -52,7 +52,7 @@ class _RegisterState extends State<Register> {
                     const SizedBox(height: 20,),
                     TextFormField(
                       style: const TextStyle(
-                          color: Colors.white
+                          color: Colors.black
                       ),
                       decoration: textInputDecoration.copyWith(hintText: 'e-mail'),
                       onChanged: (val) {
@@ -63,7 +63,7 @@ class _RegisterState extends State<Register> {
                     const SizedBox(height: 20,),
                     TextFormField(
                       style: const TextStyle(
-                          color: Colors.white
+                          color: Colors.black
                       ),
                       decoration: textInputDecoration.copyWith(hintText: 'password'),
                       validator: (val) => val!.length < 6 ? 'password should at least be of length 6' : null,

@@ -1,4 +1,6 @@
 import 'package:auth/model/auth_user.dart';
+import 'package:auth/screens/authenticate/authenticate.dart';
+import 'package:auth/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,11 +11,11 @@ class Wrapper extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final user = Provider.of<FirebaseUser?>(context);
-    bool userLoggedIn = user != null;
-    if(userLoggedIn){
-      return Container();
+    bool isUserLoggedIn = user != null;
+    if(isUserLoggedIn){
+      return const Home();
     }else{
-      return Container();
+      return const Authenticate();
     }
   }
 }
