@@ -1,14 +1,13 @@
 
 import 'package:auth/services/auth.dart';
 import 'package:auth/shared/constants.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:auth/shared/loading.dart';
 
 class SignIn extends StatefulWidget {
   final Function toggleView;
 
-  SignIn({required this.toggleView});
+  const SignIn({Key? key, required this.toggleView}) : super(key: key);
 
   @override
   State<SignIn> createState() => _SignInState();

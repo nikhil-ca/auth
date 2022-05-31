@@ -8,7 +8,7 @@ class Register extends StatefulWidget {
 
   final Function toggleView;
 
-  Register({required this.toggleView});
+  const Register({Key? key,required this.toggleView}): super(key: key);
 
   @override
   State<Register> createState() => _RegisterState();
